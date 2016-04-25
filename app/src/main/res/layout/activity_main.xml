@@ -41,19 +41,25 @@
             android:text="@string/column_email"
             android:textStyle="bold" />
 
-        <TextView android:text="@string/email" />
+        <TextView
+            android:autoLink="email"
+            android:text="@string/email" />
 
         <TextView
             android:text="@string/column_facebook"
             android:textStyle="bold" />
 
-        <TextView android:text="@string/facebook" />
+        <TextView
+            android:autoLink="web"
+            android:text="@string/facebook" />
 
         <TextView
             android:text="@string/column_website"
             android:textStyle="bold" />
 
-        <TextView android:text="@string/website" />
+        <TextView
+            android:autoLink="web"
+            android:text="@string/website" />
     </GridLayout>
 
 </LinearLayout>
