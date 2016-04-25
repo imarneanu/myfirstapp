@@ -17,32 +17,43 @@
         android:src="@drawable/logo" />
 
     <GridLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="2">
+        android:columnCount="2"
+        android:useDefaultMargins="true">
 
-        <TextView android:text="@string/column_name" />
+        <TextView
+            android:text="@string/column_name"
+            android:textStyle="bold" />
 
         <TextView android:text="@string/name" />
 
-        <TextView android:text="@string/column_description" />
+        <TextView
+            android:text="@string/column_description"
+            android:textStyle="bold" />
 
-        <TextView android:text="@string/description" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/description" />
 
-        <TextView android:text="@string/column_email" />
+        <TextView
+            android:text="@string/column_email"
+            android:textStyle="bold" />
 
         <TextView android:text="@string/email" />
 
-        <TextView android:text="@string/column_facebook" />
+        <TextView
+            android:text="@string/column_facebook"
+            android:textStyle="bold" />
 
         <TextView android:text="@string/facebook" />
 
-        <TextView android:text="@string/column_website" />
-
         <TextView
-            android:linksClickable="true"
-            android:text="@string/website"
-            android:textColorLink="@android:color/holo_red_dark" />
+            android:text="@string/column_website"
+            android:textStyle="bold" />
+
+        <TextView android:text="@string/website" />
     </GridLayout>
 
 </LinearLayout>
